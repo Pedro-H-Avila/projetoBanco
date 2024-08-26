@@ -10,10 +10,19 @@ public class Conta{
     }
     public boolean saca(double valor) { 
         if(this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
+            this.saldo += - valor;
             return true;
         } 
             return false;
         }
+    public void transfere (int valor, Conta destino) {
+        if (this.saldo >= valor){
+            this.saldo -= valor;
+            destino.deposita(valor);
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
