@@ -15,7 +15,7 @@ public class Conta{
         } 
             return false;
         }
-    public void transfere (int valor, Conta destino) {
+    public void transfere (double valor, Conta destino) {
         if (this.saldo >= valor){
             this.saldo -= valor;
             destino.deposita(valor);
