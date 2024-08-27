@@ -13,6 +13,7 @@ public class TestaMetodo {
         }*/
         System.out.println(conta001.saldo);
         System.out.println(conseguiuRetirar);
+        conta001.titular = "Pedro Vasconcelos";
 
         Conta conta002 = new Conta();
         conta002.deposita(1000);
